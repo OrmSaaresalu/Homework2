@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Kaido Maiste",
+    "createdAt": "2026-09-30",
+    "text": "Anyone know a good place for coffee around here?",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": 2,
+    "author": "Maria Tamm",
+    "createdAt": "2026-09-28",
+    "text": "Weekend hike",
+    "image": "https://picsum.photos/id/28/600/350",
+    "imageAlt": "Pine trees in a forest"
+  },
+  {
+    "id": 3,
+    "author": "Mart Mätas",
+    "createdAt": "2026-09-22",
+    "text": "Tartu 2026",
+    "image": "https://picsum.photos/id/0/600/350",
+    "imageAlt": "Coffee cup on a wooden table"
+  },
+  {
+    "id": 4,
+    "author": "Karl Kask",
+    "createdAt": "2026-09-20",
+    "text": "Just tried the new pizza place, really good",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": 5,
+    "author": "Liisa Mägi",
+    "createdAt": "2026-09-15",
+    "text": "Anyone watching the game tonight?",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": 6,
+    "author": "Maria Tamm",
+    "createdAt": "2026-09-12",
+    "text": "Sunset by the river",
+    "image": "https://picsum.photos/id/1015/600/350",
+    "imageAlt": "River between hills at sunset"
+  },
+  {
+    "id": 7,
+    "author": "Karl Kask",
+    "createdAt": "2026-09-10",
+    "text": "Does anyone have notes from yesterday's lecture?",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": 8,
+    "author": "Jaan Praks",
+    "createdAt": "2026-09-07",
+    "text": "Finally finished the lab assignment",
+    "image": null,
+    "imageAlt": null
+  },
+  {
+    "id": 9,
+    "author": "Liisa Mägi",
+    "createdAt": "2026-09-04",
+    "text": "Autumn is here",
+    "image": "https://picsum.photos/id/1018/600/350",
+    "imageAlt": "Mountains with a green valley"
+  },
+  {
+    "id": 10,
+    "author": "John Doe",
+    "createdAt": "2026-09-01",
+    "text": "First post on PostIt!",
+    "image": null,
+    "imageAlt": null
+  }
+]
