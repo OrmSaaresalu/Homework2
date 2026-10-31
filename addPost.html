@@ -1,41 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PostIt - Add Post</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostIt - Add Post</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="forms.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="addPost.html">Add Post</a>
+      </nav>
+      <a href="login.html" class="avatar" aria-label="Login"></a>
+    </header>
 
-  <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="addPost.html">Add Post</a>
-    </nav>
-    <a href="login.html" class="avatar" aria-label="Login"></a>
-  </header>
+    <main>
+      <section class="card">
+        <h1>Add Post</h1>
+        <form action="index.html" method="post" enctype="multipart/form-data">
+          <label>
+            Post body
+            <textarea
+              name="body"
+              rows="5"
+              placeholder="textarea"
+              required
+            ></textarea>
+          </label>
 
-  <main>
-    <section class="card">
-      <h1>Add Post</h1>
-      <form action="index.html">
-        <label>
-          Post body
-          <textarea name="body" rows="5" placeholder="textarea"></textarea>
-        </label>
+          <label>
+            Select file
+            <input type="file" name="file" />
+          </label>
 
-        <label>
-          Select file
-          <input type="file" name="file">
-        </label>
+          <button type="submit" class="primary">Create post</button>
+        </form>
+      </section>
+    </main>
 
-        <button type="submit" class="primary">Create post</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>Footer</footer>
-
-</body>
+    <footer>Footer</footer>
+  </body>
 </html>

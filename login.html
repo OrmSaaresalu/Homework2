@@ -1,38 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PostIt - Login</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostIt - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="forms.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="addPost.html">Add Post</a>
+      </nav>
+      <span class="avatar"></span>
+    </header>
 
-  <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="addPost.html">Add Post</a>
-    </nav>
-    <span class="avatar"></span>
-  </header>
+    <main>
+      <section class="card">
+        <h1>Welcome to PostIt</h1>
+        <a href="#">Create an account</a>
+        <p>or<br />Please log in</p>
 
-  <main>
-    <section class="card">
-      <h1>Welcome to PostIt</h1>
-      <a href="#">Create an account</a>
-      <p>or<br>Please log in</p>
+        <form action="index.html" method="post">
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="primary">Log in</button>
+        </form>
 
-      <form action="index.html">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit" class="primary">Log in</button>
-      </form>
+        <p><a href="#">Forget password</a></p>
+      </section>
+    </main>
 
-      <p><a href="#">Forget password</a></p>
-    </section>
-  </main>
-
-  <footer>Footer</footer>
-
-</body>
+    <footer>Footer</footer>
+  </body>
 </html>
