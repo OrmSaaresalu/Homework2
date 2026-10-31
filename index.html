@@ -1,70 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PostIt - Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostIt - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="addPost.html">Add Post</a>
+      </nav>
+      <a href="login.html" class="avatar" aria-label="Login"></a>
+    </header>
 
-  <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="addPost.html">Add Post</a>
-    </nav>
-    <a href="login.html" class="avatar" aria-label="Login"></a>
-  </header>
+    <main>
+      <h1 class="hidden">PostIt</h1>
+      <aside class="side"></aside>
 
-  <main>
-    <h1 class="hidden">PostIt</h1>
-    <aside class="side"></aside>
+      <div class="content" id="posts">
+        <p id="status">Loading posts...</p>
+      </div>
 
-    <div class="content">
+      <aside class="side"></aside>
+    </main>
 
-      <article>
-        <h2 class="hidden">Post 1</h2>
-        <header><span class="avatar"></span><time datetime="2026-09-30">Sep 30, 2026</time></header>
-        <p>Anyone know a good place for coffee around here?</p>
-        <button class="like">👍</button>
-      </article>
-
-      <article>
-        <h2 class="hidden">Post 2</h2>
-        <header><span class="avatar"></span><time datetime="2026-09-28">Sep 28, 2026</time></header>
-        <img src="https://picsum.photos/id/28/600/350" alt="Pine trees in a forest">
-        <p>Weekend hike</p>
-        <button class="like">👍</button>
-      </article>
-
-      <article>
-        <h2 class="hidden">Post 3</h2>
-        <header><span class="avatar"></span><time datetime="2026-09-22">Sep 22, 2026</time></header>
-        <img src="https://picsum.photos/id/0/600/350" alt="Coffee cup on a wooden table">
-        <p>Tartu 2026</p>
-        <button class="like">👍</button>
-      </article>
-
-      <article>
-        <h2 class="hidden">Post 4</h2>
-        <header><span class="avatar"></span><time datetime="2026-09-20">Sep 20, 2026</time></header>
-        <p>Just tried the new pizza place, really good</p>
-        <button class="like">👍</button>
-      </article>
-
-      <article>
-        <h2 class="hidden">Post 5</h2>
-        <header><span class="avatar"></span><time datetime="2026-09-15">Sep 15, 2026</time></header>
-        <p>Anyone watching the game tonight?</p>
-        <button class="like">👍</button>
-      </article>
-
-    </div>
-
-    <aside class="side"></aside>
-  </main>
-
-  <footer>Footer</footer>
-
-</body>
+    <footer>Footer</footer>
+  </body>
 </html>
