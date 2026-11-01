@@ -6,6 +6,7 @@
     <title>PostIt - Home</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script src="js/dropdown.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -13,7 +14,15 @@
         <a href="index.html">Home</a>
         <a href="addPost.html">Add Post</a>
       </nav>
-      <a href="login.html" class="avatar" aria-label="Login"></a>
+      <div class="user-menu">
+        <button class="avatar" id="avatar-btn" aria-label="User menu"
+                aria-expanded="false" aria-controls="user-dropdown"></button>
+        <div class="dropdown" id="user-dropdown" hidden>
+          <span>John Doe</span>
+          <span>john.doe@ut.ee</span>
+          <a href="login.html">logout</a>
+        </div>
+      </div>
     </header>
 
     <main>
