@@ -1,3 +1,4 @@
+// const POSTS_URL = "https://api.npoint.io/05660f5cb7d054e15c2a";
 const POSTS_URL = "posts.json";
 
 const postsContainer = document.getElementById("posts");
