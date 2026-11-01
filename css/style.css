@@ -38,6 +38,27 @@ nav a:hover { background: #1f497d; color: #fff; }
   display: inline-block;
 }
 
+button.avatar { border: none; padding: 0; cursor: pointer; }
+
+.user-menu { position: relative; }
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  min-width: 180px;
+  background: #d9d9d9;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+
+.dropdown[hidden] { display: none; }
+.dropdown a { color: #000; }
+
 main {
   flex: 1;
   display: flex;
