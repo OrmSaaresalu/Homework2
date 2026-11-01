@@ -1,12 +1,8 @@
-const POSTS_URL = "https://api.npoint.io/05660f5cb7d054e15c2a";
-
-// Task 5 (teammate): comment out the line above and use the local file instead:
-// const POSTS_URL = "posts.json";
+const POSTS_URL = "posts.json";
 
 const postsContainer = document.getElementById("posts");
 
 function formatDate(isoDate) {
-  // "2026-09-30" -> "Sep 30, 2026"; UTC avoids off-by-one day shifts
   return new Date(isoDate).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
@@ -39,7 +35,6 @@ function createPostElement(post) {
   header.append(avatar, author, time);
   article.append(heading, header);
 
-  // Posts without a photo skip the <img>
   if (post.image) {
     const img = document.createElement("img");
     img.src = post.image;
@@ -66,7 +61,6 @@ async function loadPosts() {
     }
     const posts = await response.json();
 
-    // Newest first
     posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
     postsContainer.replaceChildren(...posts.map(createPostElement));
