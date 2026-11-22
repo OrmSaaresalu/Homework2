@@ -1,3 +1,12 @@
+:root {
+  --bg: #f4f5f7;
+  --panel: #c0c0c0;
+  --card: #d9d9d9;
+  --accent: #1f497d;
+  --accent-light: #2c63a8;
+  --radius: 8px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,16 +14,25 @@
 body {
   margin: 0;
   font-family: monospace;
-  background: #fff;
+  color: #222;
+  background: var(--bg);
 }
 
 #app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 main {
   flex: 1;
   margin: 0 10px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
