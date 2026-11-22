@@ -5,7 +5,8 @@
     "createdAt": "2026-09-30",
     "text": "Anyone know a good place for coffee around here?",
     "image": null,
-    "imageAlt": null
+    "imageAlt": null,
+    "likes": 11
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "createdAt": "2026-09-28",
     "text": "Weekend hike",
     "image": "https://picsum.photos/id/28/600/350",
-    "imageAlt": "Pine trees in a forest"
+    "imageAlt": "Pine trees in a forest",
+    "likes": 21
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "createdAt": "2026-09-22",
     "text": "Tartu 2026",
     "image": "https://picsum.photos/id/0/600/350",
-    "imageAlt": "Photo attached to the Tartu 2026 post"
+    "imageAlt": "Photo attached to the Tartu 2026 post",
+    "likes": 34
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "createdAt": "2026-09-20",
     "text": "Just tried the new pizza place, really good",
     "image": null,
-    "imageAlt": null
+    "imageAlt": null,
+    "likes": 8
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "createdAt": "2026-09-15",
     "text": "Anyone watching the game tonight?",
     "image": null,
-    "imageAlt": null
+    "imageAlt": null,
+    "likes": 5
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "createdAt": "2026-09-12",
     "text": "Sunset by the river",
     "image": "https://picsum.photos/id/1015/600/350",
-    "imageAlt": "River between hills at sunset"
+    "imageAlt": "River between hills at sunset",
+    "likes": 42
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "createdAt": "2026-09-10",
     "text": "Does anyone have notes from yesterday's lecture?",
     "image": null,
-    "imageAlt": null
+    "imageAlt": null,
+    "likes": 3
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "createdAt": "2026-09-07",
     "text": "Finally finished the lab assignment",
     "image": null,
-    "imageAlt": null
+    "imageAlt": null,
+    "likes": 17
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "createdAt": "2026-09-04",
     "text": "Autumn is here",
     "image": "https://picsum.photos/id/1018/600/350",
-    "imageAlt": "Mountains with a green valley"
+    "imageAlt": "Mountains with a green valley",
+    "likes": 26
   },
   {
     "id": 10,
@@ -77,6 +86,7 @@
     "createdAt": "2026-09-01",
     "text": "First post on PostIt!",
     "image": null,
-    "imageAlt": null
+    "imageAlt": null,
+    "likes": 2
   }
 ]
