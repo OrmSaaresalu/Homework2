@@ -27,7 +27,14 @@ onMounted(async () => {
     <div class="content">
       <p v-if="store.state.posts.length === 0">{{ status }}</p>
       <PostItem v-for="post in store.state.posts" :key="post.id" :id="post.id" />
-      <!-- Reset likes button goes here (teammate, task 4.3) -->
+      <button
+        v-if="store.state.posts.length > 0"
+        class="reset-likes"
+        type="button"
+        @click="store.commit('RESET_LIKES')"
+      >
+        Reset likes
+      </button>
     </div>
 
     <aside class="side"></aside>
@@ -59,6 +66,23 @@ onMounted(async () => {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+.reset-likes {
+  align-self: center;
+  padding: 6px 18px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 999px;
+  background: #1f497d;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.reset-likes:hover {
+  background: #2c63a8;
 }
 
 @media (max-width: 600px) {
