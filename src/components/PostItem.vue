@@ -53,6 +53,7 @@ function like() {
   background: #d9d9d9;
   border-radius: 8px;
   padding: 10px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.15);
 }
 
 .post > header {
@@ -67,12 +68,24 @@ function like() {
   border-radius: 50%;
   background: #888;
   display: inline-block;
+  flex-shrink: 0;
+}
+
+.author {
+  flex: 1;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+time {
+  font-size: 0.85em;
 }
 
 .post img {
   width: 100%;
   border-radius: 4px;
   margin-top: 8px;
+  display: block;
 }
 
 .post img + p {
@@ -90,6 +103,15 @@ function like() {
   border: none;
   font-size: 1.2em;
   cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.like:hover {
+  transform: scale(1.2);
+}
+
+.like:active {
+  transform: scale(0.95);
 }
 
 .hidden {
