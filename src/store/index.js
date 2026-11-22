@@ -13,6 +13,13 @@ export default createStore({
     SET_POSTS(state, posts) {
       state.posts = posts;
     },
+
+    LIKE_POST(state, id) {
+      const post = state.posts.find((p) => p.id === id);
+      if (post) {
+        post.likes++;
+      }
+    },
   },
 
   actions: {

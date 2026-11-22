@@ -17,6 +17,10 @@ const formattedDate = computed(() =>
     timeZone: "UTC",
   }),
 );
+
+function like() {
+  store.commit("LIKE_POST", props.id);
+}
 </script>
 
 <template>
@@ -32,6 +36,15 @@ const formattedDate = computed(() =>
     <img v-if="post.image" :src="post.image" :alt="post.imageAlt ?? ''" />
 
     <p>{{ post.text }}</p>
+
+    <div class="actions">
+      <button class="like" type="button" aria-label="Like post" @click="like">
+        👍
+      </button>
+      <span class="like-count">
+        {{ post.likes }} {{ post.likes === 1 ? "like" : "likes" }}
+      </span>
+    </div>
   </article>
 </template>
 
@@ -64,6 +77,19 @@ const formattedDate = computed(() =>
 
 .post img + p {
   font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 .hidden {
