@@ -16,6 +16,8 @@ const year = new Date().getFullYear();
   padding: 12px;
   border-radius: 8px;
   margin: 10px;
+  font-size: 0.85em;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.15);
 }
 
 .site-footer p {
