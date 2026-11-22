@@ -13,6 +13,7 @@
   padding: 10px 15px;
   border-radius: 8px;
   margin: 10px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.15);
 }
 
 nav {
@@ -23,8 +24,9 @@ nav {
 nav a {
   color: #000;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
 }
 
 nav a:hover,
