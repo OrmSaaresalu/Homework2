@@ -20,6 +20,12 @@ export default createStore({
         post.likes++;
       }
     },
+
+    RESET_LIKES(state) {
+      state.posts.forEach((post) => {
+        post.likes = 0;
+      });
+    },
   },
 
   actions: {
